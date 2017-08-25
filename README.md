@@ -10,7 +10,7 @@ The Consent2Share User Interface API (c2s-ui-api) is a Backend For Frontends(BFF
 + [Docker Engine](https://docs.docker.com/engine/installation/) (for building a Docker image from the project)
 
 ### Commands
-
+feature/test
 This is a Maven project and requires [Apache Maven](https://maven.apache.org/) 3.3.3 or greater to build it. It is recommended to use the *Maven Wrapper* scripts provided with this project. *Maven Wrapper* requires an internet connection to download Maven and project dependencies for the very first build.
 
 To build the project, navigate to the folder that contains `pom.xml` file using the terminal/command line.
@@ -35,7 +35,7 @@ This is a [Spring Boot](https://projects.spring.io/spring-boot/) project and ser
 ## Configure
 
 This API utilizes [`Configuration Server`](https://github.com/bhits-dev/config-server) which is based on [Spring Cloud Config](https://github.com/spring-cloud/spring-cloud-config) to manage externalized configuration, which is stored in a `Configuration Data Git Repository`. We provide a [`Default Configuration Data Git Repository`]( https://github.com/bhits-dev/c2s-config-data).
-
+###Test by ASU contribution
 This API can run with the default configuration, which is targeted for a local development environment. Default configuration data is from three places: `bootstrap.yml`, `application.yml`, and the data which `Configuration Server` reads from `Configuration Data Git Repository`. Both `bootstrap.yml` and `application.yml` files are located in the `resources` folder of this source code.
 
 We **recommend** overriding the configuration as needed in the `Configuration Data Git Repository`, which is used by the `Configuration Server`.
